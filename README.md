@@ -1,3 +1,6 @@
+Had problems using gunicorn in conda from environment.yml. Used pip install from requirements instead.
+
+
 Working in a command line environment is recommended for ease of use with git and dvc. If on Windows, WSL1 or 2 is recommended.
 
 # Environment Set up (pip or conda)
