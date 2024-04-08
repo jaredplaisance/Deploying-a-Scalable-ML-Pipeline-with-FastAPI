@@ -73,7 +73,7 @@ print(f"Precision: {p:.4f} | Recall: {r:.4f} | F1: {fb:.4f}")
 # iterate through the categorical features
 # use test, col and slicevalue as part of the input
 for col in cat_features:
-# iterate through the unique values in one categorical feature
+    # iterate through the unique values in one categorical feature
     for slicevalue in sorted(test[col].unique()):
         count = test[test[col] == slicevalue].shape[0]
         try:

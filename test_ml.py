@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 
+
 # Test if train_model returns an instance of the RandomForestClassifier
 def test_model_instance():
     X_train = pd.DataFrame({'feature1': [1, 2, 3], 'feature2': [4, 5, 6]})
