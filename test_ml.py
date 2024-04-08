@@ -1,5 +1,5 @@
 import pytest
-from ml.model import train_model, compute_model_metrics, performance_on_categorical_slice
+from ml.model import train_model, compute_model_metrics
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier

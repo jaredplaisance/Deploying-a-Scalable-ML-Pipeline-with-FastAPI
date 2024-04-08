@@ -10,8 +10,6 @@ print("GET request status code:", r_get.status_code)
 # print the welcome message
 print("Welcome message from GET request:", r_get.json())
 
-
-
 data = {
     "age": 37,
     "workclass": "Private",

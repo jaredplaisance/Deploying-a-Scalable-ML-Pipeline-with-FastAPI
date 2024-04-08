@@ -34,7 +34,7 @@ cat_features = [
 ]
 
 # TODO: use the process_data function provided to process the data.
-    # use the train dataset 
+    # use the train dataset
     # use training=True
     # do not need to pass encoder and lb as input
 X_train, y_train, encoder, lb = process_data(
@@ -63,7 +63,7 @@ encoder_path = os.path.join(project_path, "model", "encoder.pkl")
 save_model(encoder, encoder_path)
 
 # load the model
-model = load_model(model_path) 
+model = load_model(model_path)
 
 # TODO: use the inference function to run the model inferences on the test dataset.
 preds = inference(model, X_test)
@@ -100,3 +100,4 @@ for col in cat_features:
         except TypeError as e:
             print(f"Ignoring TypeError: {e}")
             continue
+        
