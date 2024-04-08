@@ -11,7 +11,7 @@ The intended use of this model is to assist in predicting income levels based on
 The model was trained on a dataset obtained from the UCI Machine Learning Repository using one-hot encoding, containing census data from the United States. The dataset includes features such as age, education level, occupation, and native country, with the target variable being the individual's income level categorized as ">50K" or "<=50K".
 
 ## Evaluation Data
-The model's performance was evaluated using a separate portion of the same dataset that was not used during training. This evaluation dataset contains similar demographic and socioeconomic features as the training data.
+The model's performance was evaluated using a separate portion of the same dataset that was not used during training. 20% of the original dataset was allocated as the test dataset.This evaluation dataset contains similar demographic and socioeconomic features as the training data.
 
 ## Metrics
 The following metrics were used to evaluate the model's performance:
