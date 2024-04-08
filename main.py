@@ -26,10 +26,18 @@ class Data(BaseModel):
     native_country: str = Field(..., example="United-States", alias="native-country")
 
 
-path = r"S:\Documents\School\School - WGU\D501 - Machine Learning DevOps\Project 2\Deploying-a-Scalable-ML-Pipeline-with-FastAPI\model\encoder.pkl"
+path = (
+    r"S:\Documents\School\School - WGU\D501 - "
+    "Machine Learning DevOps\Project 2\Deploying-a-"
+    "Scalable-ML-Pipeline-with-FastAPI\model\encoder.pkl"
+)
 encoder = load_model(path)
 
-path = r"S:\Documents\School\School - WGU\D501 - Machine Learning DevOps\Project 2\Deploying-a-Scalable-ML-Pipeline-with-FastAPI\model\model.pkl"
+path = (
+    r"S:\Documents\School\School - WGU\D501 - "
+    "Machine Learning DevOps\Project 2\Deploying-a-"
+    "Scalable-ML-Pipeline-with-FastAPI\model\model.pkl"
+)
 model = load_model(path)
 
 # create a RESTful API using FastAPI
