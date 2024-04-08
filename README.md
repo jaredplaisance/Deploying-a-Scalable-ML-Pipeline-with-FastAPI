@@ -1,3 +1,6 @@
+GitHub Repo Link: https://github.com/jaredplaisance/Deploying-a-Scalable-ML-Pipeline-with-FastAPI
+
+
 Had problems using gunicorn in conda from environment.yml. Used pip install from requirements instead.
 
 
