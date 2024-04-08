@@ -28,15 +28,15 @@ class Data(BaseModel):
 
 path = (
     r"S:\Documents\School\School - WGU\D501 - "
-    "Machine Learning DevOps\Project 2\Deploying-a-"
-    "Scalable-ML-Pipeline-with-FastAPI\model\encoder.pkl"
+    r"Machine Learning DevOps\Project 2\Deploying-a-"
+    r"Scalable-ML-Pipeline-with-FastAPI\model\encoder.pkl"
 )
 encoder = load_model(path)
 
 path = (
     r"S:\Documents\School\School - WGU\D501 - "
-    "Machine Learning DevOps\Project 2\Deploying-a-"
-    "Scalable-ML-Pipeline-with-FastAPI\model\model.pkl"
+    r"Machine Learning DevOps\Project 2\Deploying-a-"
+    r"Scalable-ML-Pipeline-with-FastAPI\model\model.pkl"
 )
 model = load_model(path)
 
