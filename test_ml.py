@@ -1,4 +1,3 @@
-import pytest
 from ml.model import train_model, compute_model_metrics
 import pandas as pd
 import numpy as np
@@ -11,6 +10,7 @@ def test_model_instance():
     model = train_model(X_train, y_train)
     assert isinstance(model, RandomForestClassifier)
 
+
 # Test if compute_model_metrics returns the expected value
 def test_compute_model_metrics_value():
     y_true = np.array([0, 1, 0, 1, 0])
@@ -19,6 +19,7 @@ def test_compute_model_metrics_value():
     assert precision == 0.6666666666666666
     assert recall == 1.0
     assert f1 == 0.8
+
 
 # Test if the trained model type is RandomForestClassifier
 def test_model_type():

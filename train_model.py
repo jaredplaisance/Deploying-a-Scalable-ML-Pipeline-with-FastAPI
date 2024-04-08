@@ -34,9 +34,6 @@ cat_features = [
 ]
 
 # TODO: use the process_data function provided to process the data.
-    # use the train dataset
-    # use training=True
-    # do not need to pass encoder and lb as input
 X_train, y_train, encoder, lb = process_data(
     train,
     categorical_features=cat_features,
@@ -76,7 +73,7 @@ print(f"Precision: {p:.4f} | Recall: {r:.4f} | F1: {fb:.4f}")
 # iterate through the categorical features
 # use test, col and slicevalue as part of the input
 for col in cat_features:
-    # iterate through the unique values in one categorical feature
+# iterate through the unique values in one categorical feature
     for slicevalue in sorted(test[col].unique()):
         count = test[test[col] == slicevalue].shape[0]
         try:
@@ -100,4 +97,3 @@ for col in cat_features:
         except TypeError as e:
             print(f"Ignoring TypeError: {e}")
             continue
-        

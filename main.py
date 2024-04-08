@@ -69,10 +69,10 @@ async def post_inference(data: Data):
         "native-country",
     ]
     data_processed, _, _, _ = process_data(
-        data, 
-        categorical_features=cat_features, 
+        data,
+        categorical_features=cat_features,
         training=False,
         encoder=encoder,
     )
-    _inference =  inference(model, data_processed)
+    _inference = inference(model, data_processed)
     return {"result": apply_label(_inference)}
